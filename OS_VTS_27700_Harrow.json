@@ -1,14 +1,14 @@
 {
-  "version": 8,
-  "metadata": {"maputnik:renderer": "mlgljs"},
-  "sources": {
-    "esri": {
-      "type": "vector",
-      "url": "https://api.os.uk/maps/vector/v1/vts?srs=27700&key=dpguytzsYWUSSt6GCkdBS0llLylcHV9t"
-    }
-  },
-  "sprite": "https://raw.githubusercontent.com/OrdnanceSurvey/OS-Vector-Tile-API-Stylesheets/main/OS_VTS_27700/resources/sprites/sprite",
-  "glyphs": "https://api.os.uk/maps/vector/v1/vts/resources/fonts/{fontstack}/{range}.pbf",
+    "version": 8,
+    "_sprite": "https://api.os.uk/maps/vector/v1/vts/resources/sprites/sprite",
+    "sprite": "https://raw.githubusercontent.com/OrdnanceSurvey/OS-Vector-Tile-API-Stylesheets/main/OS_VTS_27700/resources/sprites/sprite",
+    "glyphs": "https://api.os.uk/maps/vector/v1/vts/resources/fonts/{fontstack}/{range}.pbf",
+    "sources": {
+        "esri": {
+            "type": "vector",
+            "url": "https://api.os.uk/maps/vector/v1/vts"
+        }
+    },
   "layers": [
     {
       "id": "background",
@@ -678,7 +678,7 @@
       "minzoom": 11,
       "maxzoom": 12,
       "filter": ["==", "_symbol", 6],
-      "layout": [],
+      "layout": {},
       "paint": {"fill-color": "#F2F2EC"}
     },
     {
@@ -2732,7 +2732,5 @@
         "line-width": {"stops": [[13, 1.5], [14, 2.5], [15, 3.5]]}
       }
     }
-  ],
-  "_sprite": "https://api.os.uk/maps/vector/v1/vts/resources/sprites/sprite",
-  "id": "u3c8a5l"
+  ]
 }
